@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+
+       
+       <div class="page"> 
+        <h2>Pagination</h2>
+        <p>Responsive pagination with hover effects:</p>
+        
+        <div class="pagination">
+          <a href="#"> <button type="Prev" class="btn btn-primary">prev</button></a>
+          <a href="#">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+          <a href="#">6</a>
+          <a href="#"><button type="Next" class="btn btn-primary">Next</button></a>
+        </div><br><br><br>
+            <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+              Name: <input type="text" name="fname">
+              <input type="submit" value="Submit">
+            </form> 
+        </div>   
+</body>
+<script>
+    function validateForm() {
+      var x = document.forms["myForm"]["fname"].value;
+      if (x == "") {
+        alert("Name must be filled out");
+        return false;
+      }
+    }
+    </script>
+</html>
